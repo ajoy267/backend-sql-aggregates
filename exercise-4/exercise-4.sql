@@ -2,7 +2,7 @@
 -- include the category name and avg length
 SELECT 
     name, 
-    AVG(length) as avg
+    AVG(length)
 FROM 
     category
 RIGHT JOIN 

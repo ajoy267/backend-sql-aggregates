@@ -2,7 +2,7 @@
 -- include the city name and sum
 -- use SUM to sum up the amounts
 SELECT 
-    city, SUM (amount) as sum
+    city, SUM(amount)
 FROM 
     city
 RIGHT JOIN 
@@ -24,6 +24,6 @@ ON
 GROUP BY 
     city
 ORDER BY
-    sum DESC
+    SUM DESC
 LIMIT 
     10

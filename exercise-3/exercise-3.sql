@@ -3,7 +3,7 @@
 -- use AVG to average the amount
 SELECT 
     country, 
-    AVG(amount) as avg
+    AVG(amount)
 FROM 
     country
 LEFT JOIN 
@@ -29,6 +29,6 @@ ON
 GROUP BY 
     country
 ORDER BY 
-    avg DESC
+    AVG DESC
 LIMIT 
     10
